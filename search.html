@@ -4,22 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Search | Azadari connectionsr</title>
-
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
+  
+  <style>
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:'Poppins',sans-serif;
 }
-
 body{
 background:#f7f7f7;
 }
-
 header{
 position:sticky;
 top:0;
@@ -31,22 +27,18 @@ align-items:center;
 box-shadow:0 3px 12px rgba(0,0,0,.08);
 z-index:999;
 }
-
 .logo{
 font-size:26px;
 font-weight:700;
 color:#00A651;
 }
-
 nav a{
 text-decoration:none;
 color:#333;
 margin-left:25px;
 font-weight:500;
 }
-
 .searchBar{
-
 background:white;
 padding:20px 5%;
 display:flex;
@@ -55,110 +47,72 @@ flex-wrap:wrap;
 box-shadow:0 2px 10px rgba(0,0,0,.08);
 
 }
-
 .searchBar input,
 .searchBar select{
-
 padding:13px;
 border-radius:10px;
 border:1px solid #ddd;
 flex:1;
 min-width:180px;
-
 }
-
 .searchBar button{
-
 background:#00A651;
 color:white;
 border:none;
 padding:14px 25px;
 border-radius:10px;
 cursor:pointer;
-
 }
-
 .container{
-
 display:grid;
 grid-template-columns:320px 1fr;
 gap:25px;
 padding:30px 5%;
-
 }
-
 .filters{
-
 background:white;
 padding:25px;
 border-radius:15px;
 height:fit-content;
 box-shadow:0 5px 15px rgba(0,0,0,.08);
-
 }
-
 .filters h2{
-
 margin-bottom:20px;
-
 }
-
 .filter{
-
 margin-bottom:18px;
-
 }
-
 .filter label{
-
 display:block;
 margin-bottom:8px;
 font-weight:600;
-
 }
-
 .filter select,
 .filter input{
-
 width:100%;
 padding:12px;
 border:1px solid #ddd;
 border-radius:10px;
-
 }
-
 .checkbox{
-
 margin:10px 0;
-
 }
-
 .results{
-
 display:flex;
 flex-direction:column;
 gap:25px;
-
 }
-
 .top{
-
 display:flex;
 justify-content:space-between;
 align-items:center;
 margin-bottom:10px;
-
 }
-
 .sort{
-
 padding:10px;
 border-radius:8px;
-
 }
-
 .card{
-
 display:grid;
 grid-template-columns:300px 1fr;
 background:white;
@@ -166,31 +120,19 @@ border-radius:15px;
 overflow:hidden;
 box-shadow:0 6px 20px rgba(0,0,0,.08);
 transition:.3s;
-
 }
-
 .card:hover{
-
 transform:translateY(-4px);
-
 }
-
 .card img{
-
 width:100%;
 height:230px;
 object-fit:cover;
-
 }
-
 .info{
-
 padding:20px;
-
 }
-
 .badge{
-
 display:inline-block;
 background:#e9f8ef;
 color:#00A651;
@@ -198,24 +140,15 @@ padding:5px 12px;
 border-radius:30px;
 font-size:13px;
 margin-bottom:10px;
-
 }
-
 .info h3{
-
 margin-bottom:10px;
-
 }
-
 .info p{
-
 margin:6px 0;
 color:#555;
-
 }
-
 .btn{
-
 margin-top:15px;
 background:#00A651;
 color:white;
@@ -223,11 +156,8 @@ padding:12px 22px;
 border:none;
 border-radius:8px;
 cursor:pointer;
-
 }
-
 .map{
-
 margin-top:35px;
 height:450px;
 background:#ddd;
@@ -237,126 +167,77 @@ justify-content:center;
 align-items:center;
 font-size:28px;
 color:#666;
-
 }
-
 footer{
-
 margin-top:50px;
 padding:40px;
 background:#111;
 color:white;
 text-align:center;
-
 }
-
 @media(max-width:1000px){
-
 .container{
-
 grid-template-columns:1fr;
-
 }
-
 .card{
-
 grid-template-columns:1fr;
-
 }
-
 .card img{
-
 height:250px;
-
 }
-
 }
-
 </style>
-
 </head>
 
 <body>
-
 <header>
-
 <div class="logo">📍 Azadari connections</div>
-
 <nav>
-
 <a href="index.html">Home</a>
-
 <a href="#">Search</a>
-
 <a href="event.html">Events</a>
-
 <a href="#">About</a>
-
 <a href="#">Contact</a>
-
 </nav>
-
 </header>
-
+  
 <div class="searchBar">
-
 <input type="text" placeholder="Search City">
-
 <input type="text" placeholder="Area">
-
 <select>
-
 <option>Today</option>
 <option>Tomorrow</option>
 <option>This Week</option>
-
 </select>
-
+  
 <button>Search</button>
-
 </div>
-
+  
 <div class="container">
-
 <div class="filters">
-
 <h2>Filters</h2>
-
 <div class="filter">
-
 <label>Distance</label>
-
 <select>
-
-<option>Within 2 KM</option>
-<option>Within 5 KM</option>
-<option>Within 10 KM</option>
-<option>Within 20 KM</option>
-
+  <option>Within 2 KM</option>
+  <option>Within 5 KM</option>
+  <option>Within 10 KM</option>
+  <option>Within 20 KM</option>
 </select>
-
 </div>
 
 <div class="filter">
-
 <label>Majlis Type</label>
-
 <select>
-
-<option>All</option>
-<option>Majlis</option>
-<option>Matam</option>
-
+  <option>All</option>
+  <option>Majlis</option>
+  <option>Matam</option>
 </select>
-
 </div>
 
 <div class="filter">
-
 <label>Date</label>
-
 <input type="date">
-
 </div>
 
 <div class="checkbox">
@@ -376,115 +257,67 @@ height:250px;
 </div>
 
 <button class="btn" style="width:100%">Apply Filters</button>
-
 </div>
-
 <div class="results">
-
 <div class="top">
-
 <h2>23 Results Found</h2>
-
 <select class="sort">
-
-<option>Sort by Distance</option>
-<option>Upcoming</option>
-<option>Most Popular</option>
-
+  <option>Sort by Distance</option>
+  <option>Upcoming</option>
+  <option>Most Popular</option>
 </select>
-
 </div>
 
 <div class="card">
-
 <img src="https://picsum.photos/500/350?1">
-
 <div class="info">
-
 <div class="badge">Open Today</div>
 
 <h3>Imambargah Hussainia</h3>
-
 <p>📍 F-8 Islamabad</p>
-
 <p>🕌 Majlis : 8:00 PM</p>
-
 <p>🎤 Speaker : Maulana Ali Raza</p>
-
 <p>📏 Distance : 2.4 KM</p>
-
 <button class="btn">View Details</button>
-
 </div>
-
 </div>
 
 <div class="card">
-
 <img src="https://picsum.photos/500/350?2">
-
 <div class="info">
-
 <div class="badge">Popular</div>
-
 <h3>Imambargah Abbasia</h3>
-
 <p>📍 Rawalpindi</p>
-
 <p>🕌 Matam : 9:30 PM</p>
-
 <p>🎤 Speaker : Maulana Hasan</p>
-
 <p>📏 Distance : 4.1 KM</p>
-
 <button class="btn">View Details</button>
-
 </div>
-
 </div>
 
 <div class="card">
-
 <img src="https://picsum.photos/500/350?3">
-
 <div class="info">
-
 <div class="badge">Family</div>
-
 <h3>Imambargah Zahra</h3>
-
 <p>📍 Lahore</p>
-
 <p>🕌 Majlis : 7:30 PM</p>
-
 <p>🎤 Speaker : Maulana Rizvi</p>
-
 <p>📏 Distance : 5.5 KM</p>
-
 <button class="btn">View Details</button>
-
 </div>
-
 </div>
 
 <div class="map">
-
 🗺 Google Maps API Will Display Here
-
 </div>
-
 </div>
-
 </div>
 
 <footer>
-
 <h2>Matam Finder</h2>
-
 <p>Find nearby Majlis, Matam & Imambargahs easily.</p>
-
-<p>© 2026 Matam Finder</p>
-
+<p>© CyberROOM 2026 Azadari Connections </p>
 </footer>
 
 </body>
